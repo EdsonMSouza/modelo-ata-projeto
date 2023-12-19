@@ -1,0 +1,67 @@
+\documentclass[11pt,twoside]{ata}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{url,graphicx,pgf}
+\urlstyle{sf}
+\usepackage{lipsum}  % produces dummy text
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled=1]{helvet}
+\usepackage[helvet]{sfmath}
+\everymath={\sf}
+\usepackage[T1]{fontenc}
+
+\pgfdeclareimage[width=1.3\linewidth]{logo}{uninove-logo.png}
+
+\projeto{PROJETO EM INOVAÇÃO TECNOLÓGICA 2024.1}
+\curso{Bacharelado em Ciência da Computação}
+\date{15 de março de 2024}
+
+%-----------------------------------------------------------
+% Informações que devem ser preenchidas para cada reunião
+% É necessário informar os dados de cada um dos integrantes,
+%  mesmo que ausentes.
+%-----------------------------------------------------------
+
+% Nome do Aluno (RA)
+% O líder sempre virá em primeiro da lista
+% Sempre em ordem alfabética após o líder
+\participante{\lider{Tio Patinhas (618250080)}}
+
+% Presentes
+\participante{Fulano Amaral (618250082)}
+\participante{Fulana dos Santos (618250081)}
+
+% Ausentes (sem todos compareceram, então comente as linhas abaixo)
+\participante{Beltrano Silva (618250084)}[ausente][Estava sem sinal de celular]
+\participante{Ciclano Patrício (618250083)}[ausente]
+
+\begin{document}
+% Ordinária (padão) - com data marcada mediante um calendário, ou
+% Extraordinária - fora das datas marcadas em calendário
+% Incrementar a numeração para cada novo documento
+\begin{reuniao}{ORDINÁRIA (1)}
+
+    Aos quinze dias do mês de março de dois mil e vinte quatro, às quatorze horas e quinze minutos, reuniram-se no/via (informar o meio ou local), com a presença de \csuse{participantespresentes}, para tratar dos seguintes assuntos:
+
+    \begin{informes}
+        \item Verificação do cumprimento das tarefas atribuídas a cada membro do grupo.
+        \item Problemas ocorridos como não entrega de tarefas, ausência, etc.
+        \item Próximos passos para a evolução do trabalho.        
+        \item Definição do dia, horário, local e participantes da próxima reunião.
+    \end{informes}
+ 
+    %-----------------------------------------------------------
+    % Lista dos assuntos tratados (pontos de pauta)
+    %-----------------------------------------------------------
+    \begin{assuntos}
+        \item O líder do grupo verificou que as tarefas atribuídas foram cumpridas em partes de acordo com o estabelecido na última reunião.
+        \item O Aluno Fulano de Tal não concluiu a implementação do código determinado, alegando problemas técnicos em sua máquina. Ainda, informou que finalizará sua atarefa até a próxima quinta-feira (data). Os próximos passos são: implementar o CRUD e a validar os dados de teste.
+        \item (Indicar o que cada membro do grupo deverá entregar na próxima reunião).
+        \item A próxima reunião ocorrerá no dia 25 de março de 2024 às quinze horas via Google Meet.
+\end{assuntos}
+\end{reuniao}
+
+% Opcional
+\proximareuniao{25 de março de 2024.}
+
+\end{document}
